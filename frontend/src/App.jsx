@@ -38,7 +38,7 @@ function App() {
   }
 
   async function getNameAndBalance() {
-    const res = await axios.get(`http://localhost:3001/getNameAndBalance`, {
+    const res = await axios.get(`https://d-paypal.onrender.com/getNameAndBalance`, {
       params: { userAddress: address },
     });
 
